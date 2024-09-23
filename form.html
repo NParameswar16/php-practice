@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Styled Form</title>
+    <style>
+        body {
+            background-color: #222;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            background: url('https://preview.redd.it/4z5v07ss5qe61.gif?width=500&auto=webp&s=0e4212fb4752a8ab45769a4b480618d25b21a552') no-repeat center center fixed; 
+            background-size: cover;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 10px auto;
+            margin-top: 50px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-family: 'Impact', sans-serif;
+            color: #ff4500;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        input[type="text"], input[type="submit"], input[type="radio"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #444;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        input[type="submit"] {
+            cursor: pointer;
+            background-color: #ff4500;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff6347;
+        }
+
+        .Gender {
+            margin-right: 5px;
+            display: flex;
+            align-items: row;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="select.php" method="post">
+        <input type="text" name="search" placeholder="Search..." style="font-family: 'Comic Sans MS', sans-serif;">
+        <input type="submit" value="Search" style="font-family: 'Comic Sans MS', sans-serif;">
+    </form>
+    <form action="take.php" method="post">
+        <h1>Name</h1>
+        <input type="text" name="f1" placeholder="Enter Your Name" style="font-family: 'Comic Sans MS', sans-serif;">
+        <h1>Email</h1>
+        <input type="text" name="f2" placeholder="Enter Your Email" style="font-family: 'Comic Sans MS', sans-serif;">
+        <h1>Age</h1>
+        <input type="text" name="f3" placeholder="Enter Your Age" style="font-family: 'Comic Sans MS', sans-serif;">
+        <div class="Gender">
+        <h1>Gender</h1>
+        <input  type="radio" name="f4" value="Male" style="font-family: 'Comic Sans MS', sans-serif;"> Male
+        <input  type="radio" name="f4" value="Female" style="font-family: 'Comic Sans MS', sans-serif;"> Female<br>
+        <input  type="radio" name="f4" value="Others" style="font-family: 'Comic Sans MS', sans-serif;"> Others<br>
+    </div>
+        <input type="submit" value="Submit" style="font-family: 'Comic Sans MS', sans-serif;">
+
+    </form>
+</body>
+</html>
